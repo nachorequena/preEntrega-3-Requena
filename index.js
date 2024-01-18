@@ -21,9 +21,9 @@ function renderizarProductos() {
     productos.forEach(producto => {
         const card = document.createElement("div")
         card.classList.add("card")
-        
+        card.classList.add("productos")
         card.innerHTML = `
-                        <div class="productos">
+                        <div>
                             <img src="${producto.img}" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">${producto.nombre}</h5>
